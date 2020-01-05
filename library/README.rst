@@ -33,9 +33,7 @@ The serial port on your Raspberry Pi must be enabled:
    # Enable serial port
    raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
 
-And additionally be using a full UART (versus the default miniUART):
-
-Add the line ``dtoverlay=pi3-miniuart-bt`` to your ``/boot/config.txt``
+If running on Raspberry Pi 3 (not required for Raspberry Pi 4), you must also use a full UART (versus the default miniUART): add the line ``dtoverlay=pi3-miniuart-bt`` to your ``/boot/config.txt``
 
 This will switch Bluetooth over to miniUART, see
 https://www.raspberrypi.org/documentation/configuration/uart.md for more
