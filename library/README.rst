@@ -31,7 +31,7 @@ The serial port on your Raspberry Pi must be enabled:
    sudo raspi-config nonint do_serial 1
 
    # Enable serial port
-   raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
+   sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
 
 And additionally be using a full UART (versus the default miniUART):
 
